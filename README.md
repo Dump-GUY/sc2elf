@@ -1,10 +1,10 @@
 # sc2elf
 Simple dotnet Native AOT app that uses [[LibObjectFile]](https://github.com/xoofx/LibObjectFile) to convert shellcode to ELF.<br/>
 Both 32-bit and 64-bit (x86, x64) shellcode is supported -> resulting in 32-bit or 64-bit ELF.<br/>
-[[Releases]](https://github.com/Dump-GUY/sc2pe/releases) are compiled for both linux-x64 and win-x64.<br/>
+[[Releases]](https://github.com/Dump-GUY/sc2elf/releases) are compiled for both linux-x64 and win-x64.<br/>
 
 ## Description
-It is compiled to Native AOT format to demonstrate how awesome it is (still, it was a pain as some dependency uses reflection that gets trimmed if we won't trick it :D). The [[release]](https://github.com/Dump-GUY/sc2pe/releases) binaries available to download are native binaries without any dotnet dependency! (so just run and enjoy)
+It is compiled to Native AOT format to demonstrate how awesome it is (still, it was a pain as some dependency uses reflection that gets trimmed if we won't trick it :D). The [[release]](https://github.com/Dump-GUY/sc2elf/releases) binaries available to download are native binaries without any dotnet dependency! (so just run and enjoy)
 
 Native AOT compiled, using dotnet SDK 8.0.100-preview.3.23178.7<br/>
 Dotnet SDK 8+ was chosen because of producing much smaller binaries.<br/>
@@ -35,5 +35,5 @@ Pretty easy:
   --version             [Display version information]<br/>
 
 ### Example
-Convert shellcode to 32-bit PE (shellcode Start Offset set to 66th byte):<br/>
-sc2pe -a 32 -o 66 -p C:\shellcode.bin<br/>
+Convert shellcode to 32-bit ELF (shellcode Start Offset set to 66th byte):<br/>
+sc2elf -a 32 -o 66 -p C:\shellcode.bin<br/>
