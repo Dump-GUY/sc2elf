@@ -17,7 +17,7 @@ If you want to use dotnet 7 for building, modify the project file to target net7
 Pretty easy:
 - Install or update to the latest Visual Studio (preview).
 - Install dotnet 8+ SDK.
-- Open .sln and restore nugets (AsmResolver.PE, CommandLineParser) -> should be automatic if you configured the nuget URL.
+- Open .sln and restore nugets (LibObjectFile, CommandLineParser) -> should be automatic if you configured the nuget URL.
 - VS Terminale - "dotnet publish -r win-x64 -c Release"
 
 ### Building on Linux using dotnet SDK 8+:
